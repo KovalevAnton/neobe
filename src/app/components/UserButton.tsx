@@ -23,6 +23,7 @@ export default function UserButton() {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Avatar>
+              {/* eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain */}
               <AvatarImage src={session?.user?.image!} />
               <AvatarFallback>
                 {getFirstTwoCapitalLetters(session?.user?.name)}
